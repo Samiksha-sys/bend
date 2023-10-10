@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;400;600;800&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+
+}
+.landingpage{
+    background: url('images/background.png');
+    background-color: linear-gradient(180deg, rgba(5, 43, 73, 0.72)0%, rgba(5, 43, 73, 0.90) 100%,),linear-gradient(0deg, #FFF 0%, #FFF 100%),lightgrey 50%;
+    background-blend-mode:normal ,hue ,normal;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+.site-header{
+    min-height:100px;
+}
+header{
+    display:block;
+    /* margin:0 auto; */
+}
+.headgroup{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 0px;
+    flex-wrap: wrap;
+     
+    
+}
+
+.container{
+    margin:0 auto;
+    align-items:center;
+    max-width:1170px;
+}
+.menu-wrap{
+    
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding:10px 10px;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:14px;
+    font-family:Outfit;
+}
+
+.button{
+    color:#fff;
+    background-color: #3cb54a;
+    padding:10px 10px;
+    border-radius:5px;
+    font-size:14px;
+    font-family:Outfit;
+    margin-left:10px;
+}
+.bottom-content{
+    margin-top:200px;
+    
+}
+.bottom-heading{
+    font-family:Oswald;
+    font-size:50px;
+    font-weight:400;
+    color:#fff;
+    text-transform:uppercase;
+    padding-bottom:20px;
+    border-bottom:1px solid white;
+    
+
+}
+.bottom-paragraph{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0 40px 0px;
+    flex-wrap:warp;
+    
+}
+.bottom-info{
+    color:#fff;
+    font-family: outfit;
+    font-size:18px;
+    width:500px;
+}
+.bottom-btn{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:20px;
+    
+}
+
+
+.btn-request{
+    background-color: #3cb54a;
+    color:#fff;
+    border-radius:5px;
+    padding:16px 32px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    
+}
+.btn-search{
+    background: local;
+    color:#3cb54a;
+    border:1px solid #3cb54a;
+    padding:16px 32px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    border-radius:5px;
+}
