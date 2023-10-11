@@ -78,7 +78,7 @@ nav ul li a{
     object-fit:cover;
     vertical-align:top;
     position:relative;
-    height:100vh;
+    min-height:100vh;
     
     
     
@@ -147,4 +147,100 @@ width:100%;
     display:flex;
     align-items: center;
     border-radius:5px;
+}
+.homepage-footer{
+    background: rgba(5, 43, 73, 0.02);
+    
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.homepage-container {
+    font-family: Outfit;
+    text-align:center;
+    color: #687076;
+    font-weight:300;
+    font-size:12px;
+    padding:40px 0px;
+}
+
+.homepage-footer-images{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    flex-wrap: wrap;
+    padding-bottom:20px;
+    
+}
+
+.solutions-container{
+    background-color: #fff;
+}
+.solutions-content{
+    padding:40px 0px;
+}
+
+.solutions-heading h1{
+    font-family: Oswald;
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    margin-bottom:40px;
+    color:#052B49;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.solutions-box {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+.card1{
+    max-width:400px;
+    
+    
+}
+.box-image{
+    width:100%;
+}
+.box-info{
+    text-align: center;
+}
+.box-info h2{
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size:32px;
+    font-weight: 400;
+    color:#052B49;
+}
+.box-description{
+    margin-top:16px;
+    color:#3F454A;
+    font-family: outfit;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom:24px;
+}
+ .read{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    text-decoration: none;
+    color:#3cb54a;
+    
+
+}
+.card2{
+    max-width:400px;
+    text-align: center;
+    
+}
+.card3{
+    max-width:400px;
+    text-align: center;
+   
 }
