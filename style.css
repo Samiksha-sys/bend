@@ -2,17 +2,10 @@
 *{
     padding:0px;
     margin:0px;
+    box-sizing:border-box;
 
 }
-/* .landingpage{
-    background: url('images/background.png');
-    background-color: linear-gradient(180deg, rgba(5, 43, 73, 0.72)0%, rgba(5, 43, 73, 0.90) 100%,),linear-gradient(0deg, #FFF 0%, #FFF 100%),lightgrey 50%;
-    background-blend-mode:normal ,hue ,normal;
-    height:100vh;
-    background-repeat:no-repeat;
-    background-size:cover;
 
-} */
 
 header{
     position:absolute;
@@ -21,7 +14,7 @@ header{
     width:100%;
     background: none;
     z-index:2;
-    /* margin:0 auto; */
+   
   
 }
 .headgroup{
@@ -43,16 +36,18 @@ header{
     
     display:flex;
     flex-direction:row;
+   
     flex-wrap: wrap;
     
 }
 nav ul{
     list-style: none;
-    display:flex;
+    display:inline-flex;
     justify-content: flex-start;
     align-items: center;
-    gap:30px;
+    gap:20px;
     margin-right:10px;
+    /* flex-wrap: wrap; */
 }
 nav ul li a{
     text-decoration: none;
@@ -61,7 +56,13 @@ nav ul li a{
     font-family:Outfit;
     font-weight: 500;
 }
-
+.menu i{
+    color:#fff;
+   
+}
+.menu .fa-solid{
+    display: none;
+}
 .button{
     color:#fff;
     background-color: #3cb54a;
@@ -73,7 +74,9 @@ nav ul li a{
     margin-left:10px;
     text-decoration: none;
 }
-
+.banner-back{
+    position:relative;
+}
 
 .banner-back img{
     width:100%;
@@ -87,13 +90,14 @@ nav ul li a{
 }
 .bottom-content{
    
-   position:absolute;
-   left:0;
-width:100%; 
-  transform:translate(0,-12%);
-   top:55%;
-    
-}
+    position:absolute;
+    left:0;
+ width:100%; 
+   transform:translate(0,-12%);
+    top:50%;
+     
+ }
+
 .bottom-heading{
     font-family:Oswald;
     font-size:68px;
@@ -118,13 +122,14 @@ width:100%;
     color:#fff;
     font-family: outfit;
     font-size:20px;
-    width:500px;
+   max-width:500px;
 }
 .bottom-btn{
     display:flex;
     align-items: center;
     justify-content: flex-start;
     gap:20px; 
+    flex-wrap: wrap;
 } 
 
 
@@ -153,93 +158,89 @@ width:100%;
 .homepage-footer{
     background: rgba(5, 43, 73, 0.02);
     
-    margin: 0 auto;
-    align-items: center;
-    
+   
+}
+.homepage-container{
+    padding:40px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:40px;
 }
 
-.homepage-container {
+.homepage-footer-title {
     font-family: Outfit;
     text-align:center;
     color: #687076;
     font-weight:300;
-    font-size:12px;
-    padding:40px 0px;
+    font-size:16px;
+   
 }
 
 .homepage-footer-images{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    gap:20px;
     flex-wrap: wrap;
-    padding-bottom:20px;
+    
     
 }
 
-.solutions-container{
+.solution-container{
     background-color: #fff;
 }
-.solutions-content{
+.solution-outercontainer{
     padding:40px 0px;
-}
-
-.solutions-heading h1{
-    font-family: Oswald;
-    font-size: 48px;
-    letter-spacing: 0.03em;
-    margin-bottom:40px;
-    color:#052B49;
-    font-weight: 400;
-    text-transform: uppercase;
-
-}
-.solutions-box {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-
-}
-.card{
-    max-width:375px;
     display:flex;
     flex-direction:column;
-    
-    
+    justify-content: flex-start;
+    gap:56px;
 }
-.box-image{
-    width:100%;
+.solution-content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+
 }
-.box-info{
-    text-align: center;
+.solution-innercard{
+    width:370px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-.box-info h2{
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-size:32px;
-    font-weight: 400;
+
+.solution-innercard h2{
     color:#052B49;
+    font-family: oswald;
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
 }
-.box-description{
-    margin-top:16px;
+.solution-info{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.solution-description {
     color:#3F454A;
     font-family: outfit;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom:24px;
+    text-align: center;
 }
- .read{
+.solution-btn{
     display:flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap:10px;
     text-decoration: none;
     color:#3cb54a;
-    
-
+    font-size: 18px;
 }
 
-   
 .product-content{
     padding:40px 0px;
     display:flex;
@@ -247,7 +248,7 @@ width:100%;
     justify-content: flex-start;
     gap:56px;
 }
-.product-content h1{
+.page-title {
     color:#052B49;
     text-transform: uppercase;
     font-family: Oswald;
@@ -300,6 +301,7 @@ width:100%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .testimonial-container{
     background-color: #3cb54a;
@@ -401,13 +403,7 @@ width:100%;
     display:flex;
     justify-content: space-between;
 }
-.project-heading{
-    color:#052B49;
-    font-family: oswald;
-    font-size: 48px;
-    text-transform: uppercase;
-    font-weight: 400;
-}
+
 .project-outercontainer-middle{
     display:flex;
     flex-direction: row;
@@ -595,17 +591,13 @@ font-weight: 400;
     justify-content: flex-start;
     gap:56px;
 }
-.video-outercontainertop h1{
-    color:#052B49;
-    font-family: oswald;
-    font-size:48px;
-    font-weight: 400;
-    
-}
+  
+
 .video-outercontainerbottom{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .videobottom-left{
@@ -676,13 +668,7 @@ font-weight: 400;
     flex-direction: row;
     justify-content: space-between;
 }
-.blogs-heading {
-    color:#052B49;
-    font-family: Oswald;
-    font-size: 44px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+
 .project-view{
     display:flex;
     align-items: center;
@@ -699,7 +685,8 @@ font-weight: 400;
 .blogs-bottom{
     display:flex;
     flex-direction: row;
-    gap:40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 
 }
@@ -797,11 +784,13 @@ background-blend-mode: normal, hue, normal;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-card{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+ 
 
 }
 .footer-logo-info{
@@ -869,9 +858,109 @@ background-blend-mode: normal, hue, normal;
     font-family: outfit;
     font-size: 16px;
     font-weight: 400;
+    outline:none;
 }
 .line{
     border-bottom: 1px solid #E9E9E9;
+}
+
+
+@media only screen and (max-width:600px){
+    .headgroup{
+        padding:20px 20px;
+        
+    }
+    .site-logo img{
+        width: 100px;
+    }
+    .menu-wrap{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu ul{
+        background-color: #3cb54a;
+        position:fixed;
+        top:0;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+        z-index:2;
+        transition:right 0.5s;
+    
+    }
+    .button{
+        position:absolute;
+        top:20;
+       
+    }
+    .menu ul li{
+        display:block;
+        margin:15px;
+    }
+    .menu ul .fa-solid{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+    }
+    .menu .fa-solid{
+        display:block;
+        font-size:25px;
+    }
+   .button{
+    position:absolute;
+    top:0;
+    right:250px;
+    align-items: center;
+   }
+
+
+    .bottom-content{
+        position:absolute;
+        top:50%;
+        padding:0px 10px;
+    }
+.bottom-heading{
+    font-size: 20px;
+
+}
+.bottom-info{
+    font-size:14px;
+}
+.bottom-btn{
+    margin-top:20px;
+}
+.btn-request{
+    font-size: 12px;
+    padding:10px 10px;
+    flex-basis:50%;
+}
+.btn-search{
+    font-size: 12px;
+    padding:10px 10px;
+    flex-basis:50%;
+}
+.page-title{
+    font-size: 30px;
+}
+.solution-outercontainer{
+    padding:0px 20px;
+}
+.solution-content{
+    flex-basis: 100%;
+
+}
+.solution-innercard{
+    width:250px;
+}
+.solution-innercard h2{
+    font-size: 18px;
+}
+.solution-description p,.solution-btn{
+    font-size: 14px;
+}
 }
 
 

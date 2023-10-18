@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
+    <script src="index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,7 +21,7 @@
             </div>
             <div class="menu-wrap">
               <nav class="menu">
-                <ul>
+                <ul id="sidemenu">
                   <li>
                     <a href="#"
                       >Design<span style="margin-left: 8px">
@@ -47,11 +48,16 @@
                   </li>
                   <li><a href="#">Defence</a></li>
                   <li><a href="#">Contact Us</a></li>
+                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
               </nav>
+              
+              
               <div class="button-accessories">
                 <a href="#" class="button">Tell Us Your Project</a>
               </div>
+             
             </div>
           </div>
         </div>
@@ -94,25 +100,89 @@
     <div class="homepage-footer">
       <div class="container">
         <div class="homepage-container">
-          <h1>TRUSTED ACROSS INDUSTRIES</h1>
-        </div>
+          <h1 class="homepage-footer-title">TRUSTED ACROSS INDUSTRIES</h1>
+       
           <div class="homepage-footer-images">
+            <div class="image-logo">
               <img src="images/footerimages/Babcock-Logo.png"/>
-              <img src="images/footerimages/Rio-Tinto.png"/>
-              <img src="images/footerimages/Hitachi.png"/>
-              <img src="images/footerimages/Shell.png"/>
-              <img src="images/footerimages/Barminco.png"/>
-              <img src="images/footerimages/Raytheon 1.png"/>
-              <img src="images/footerimages/Komastu 1.png"/>
+            </div>
+              
+              <div class="image-logo">
+                <img src="images/footerimages/Rio-Tinto.png"/>
+              </div>
+              
+              <div class="image-logo">
+                <img src="images/footerimages/Hitachi.png"/>
+              </div>
+             
+              <div class="image-logo">
+                <img src="images/footerimages/Shell.png"/>
+              </div>
+              
+              <div class="image-logo">
+                <img src="images/footerimages/Barminco.png"/>
+              </div>
+            
+             
+              <div class="image-logo">
+                <img src="images/footerimages/Raytheon 1.png"/>
+              </div>
+              
+              <div class="image-logo">
+                <img src="images/footerimages/Komastu 1.png"/>
+              </div>
+             
 
           </div>
+        </div>
       </div>
     
+  </div>
+  <div class="solution-container">
+    <div class="container">
+      <div class="solution-outercontainer">
+        <h1 class="page-title">Our <span style="color:#3cb54a">Solution</span></h1>
+        <div class="solution-content">
+          
+            <div class="solution-innercard">
+              <img src="images/solutioni1.png"/>
+              <h2>Above Ground</h2>
+              <div class="solution-info">
+              <div class="solution-description">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias exceptu</p>
+              </div>
+              <a href="#" class="solution-btn"><img src="images/arrow-right-up-line-g.png">Read More</a>
+            </div>
+          </div>
+            <div class="solution-innercard">
+              <img src="images/solutioni2.png"/>
+              <h2>Under Ground</h2>
+              <div class="solution-info">
+              <div class="solution-description">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias exceptu</p>
+              </div>
+              <a href="#" class="solution-btn"><img src="images/arrow-right-up-line-g.png">Read More</a>
+            </div>
+          </div>
+            <div class="solution-innercard">
+              <img src="images/solutioni3.png"/>
+              <h2>Defence</h2>
+              <div class="solution-info">
+              <div class="solution-description">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias exceptu</p>
+              </div>
+              <a href="#" class="solution-btn"><img src="images/arrow-right-up-line-g.png">Read More</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </div>
   <div class="product-container">
     <div class="container">
       <div class="product-content">
-        <h1>Our Diverse <span style="color:#3cb54a">Product Range</span></h1>
+        <h1 class="page-title">Our Diverse <span style="color:#3cb54a">Product Range</span></h1>
         <div class="product-outer-container-1">
            
           <div class="product-inner-card">
@@ -258,7 +328,7 @@
     <div class="container">
       <div class="project-outercontainer">
         <div class="project-outercontainer-top">
-          <div class="project-heading">Successful <span style="color:#3cb54a">Projects</span></div>
+          <h1 class="page-title">Successful <span style="color:#3cb54a">Projects</span></h1>
           <div class="project-icons">
             <img src="images/gcircleleft.png">
             <img src="images/gcircleright.png">
@@ -401,9 +471,9 @@
   <div class="video-container">
     <div class="container">
       <div class="video-outercontainer">
-        <div class="video-outercontainertop">
-          <h1>BEND-TECH <span style="color:#3cb54a">VIDEOS</span></h1>
-        </div>
+        
+          <h1 class="page-title">BEND-TECH <span style="color:#3cb54a">VIDEOS</span></h1>
+        
         <div class="video-outercontainerbottom">
           <div class="videobottom-left">
             <div class="video-bottom-image-1">
@@ -464,7 +534,7 @@
       <div class="blogs-outercontainer">
         <div class="blogs-top">
           
-            <h1 class="blogs-heading">Our <span style="color:#3cb54a">Blogs</span></h1>
+            <h1 class="page-title">Our <span style="color:#3cb54a">Blogs</span></h1>
           
           <a href="#" class="project-view"> <img src="images/arrow-right-up-line.png"> View all blogs</a>
 
@@ -582,4 +652,14 @@
       </div>
     </div>
   </footer>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+
 </html>
