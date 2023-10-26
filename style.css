@@ -681,7 +681,7 @@ font-weight: 400;
 }
 .blogs-bottom{
     display:flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -693,8 +693,8 @@ font-weight: 400;
     flex-direction: column;
     justify-content: flex-start;
     gap:24px;
-    /* max-width:372px; */
-    flex-basis:372px;
+   
+    width:calc(33.33% - 20px);
 
    
 }
@@ -741,7 +741,7 @@ background-blend-mode: normal, hue, normal;
 .request-outercontainer{
     padding:40px 0;
     display:flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -752,10 +752,12 @@ background-blend-mode: normal, hue, normal;
     font-weight: 400;
     text-transform: uppercase;
     /* width:650px; */
-    width:calc(100% - 650px);
+    width:calc(100% - 450px);
 
 }
+
 .request-btn{
+    
     display:inline-flex;
     align-items: center;
     color:#fff;
@@ -780,15 +782,14 @@ background-blend-mode: normal, hue, normal;
 }
 .footer-top{
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap:26px;
     flex-wrap: wrap;
 }
 .footer-card{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
- 
+    width:calc(25% - 30px);
 
 }
 .footer-logo-info{
@@ -796,7 +797,7 @@ background-blend-mode: normal, hue, normal;
     font-family: outfit;
     font-size: 16px;
     font-weight: 400;
-    width:300px;
+
 }
 .footer-links{
     color:#fff;
@@ -810,12 +811,18 @@ background-blend-mode: normal, hue, normal;
     color:#F2F4F7;
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+
     
 
 }
 .footer-about ul{
     list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    
+    
     
 }
 
@@ -823,15 +830,23 @@ background-blend-mode: normal, hue, normal;
     font-family: outfit;
     font-size: 16px;
     font-weight: 400;
+   
 }
 .footer-phonelinks {
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap:10px;
+    
+    
+}
+.footer-phonelinks ul{
+    list-style: none;
     
 }
 .footer-phonelinks a{
     color:#F2F4F7;
+  
+    
 }
 
 .footer-bottom{
