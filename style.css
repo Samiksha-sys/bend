@@ -228,7 +228,7 @@ nav ul li a{
    
 }
 
-.solution-innercard h3{
+.card-title{
     color:#052B49;
     font-family: oswald;
     font-weight: 400;
@@ -427,7 +427,7 @@ nav ul li a{
     display:flex;
     flex-wrap: wrap;
     gap:20px;
-    
+    overflow:hidden;
 
     
 }
@@ -1058,7 +1058,11 @@ background-blend-mode: normal, hue, normal;
     width:calc(50%);
 }
 .homepage-footer-images{
-    gap:20px;
+    gap:10px;
+    align-items: center;
+}
+.homepage-footer-images img{
+    width:50px;
 }
 .page-title{
     font-size: 30px;
@@ -1072,21 +1076,30 @@ background-blend-mode: normal, hue, normal;
     /* flex-basis: 90%; */
     width:calc(100% - 30px);
 }
-.solution-innercard,.product-inner-card h2{
+.card-title{
+    font-size:20px;
+}
+.product-inner-card h2,.feedback-left-mainhead,.blogs-title{
     font-size: 18px;
 }
 .solution-description p,.solution-btn,.product-description,.product-readbutton{
     font-size: 14px;
 }
 .product-inner-card,.blogs-bottom-card,.feedback-left,.feedback-right,.project-card,.videobottom,.footer-card{
-    /* flex-basis: 90%; */
+    
     width:calc(100% - 30px);
 }
 
 .about-heading{
     font-size:24px;
 }
-.about-info,.feedback-card{
+.feedback-left-mainhead{
+    font-size: 28px;
+}
+.feedback-buttons img{
+    width:30px;
+}
+.about-info,.feedback-left-paragraph{
     font-size:16px;
 }
 .aboutbottom-card{
