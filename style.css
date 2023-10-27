@@ -427,7 +427,7 @@ nav ul li a{
 
 .project-outercontainer-middle{
     display:flex;
-    flex-direction: row;
+    
     gap:10px;
     overflow: hidden;
 
@@ -442,7 +442,7 @@ nav ul li a{
     position:absolute;
     top:350px;
     left:10px;
-    width:500px;
+    width:calc(80%);
     background-color: #fff;
     padding:24px;
     border-radius:5px;
