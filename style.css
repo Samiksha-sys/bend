@@ -65,7 +65,7 @@ nav ul li a{
     display: none;
 }
 .button-accessories{
-    margin-right: 10px;
+    margin-left: 10px;
 }
 .button{
     color:#fff;
@@ -101,7 +101,11 @@ nav ul li a{
     top:50%;
      
  }
-
+.bottom-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .bottom-heading{
     font-family:Oswald;
     font-size:68px;
@@ -126,7 +130,7 @@ nav ul li a{
     color:#fff;
     font-family: outfit;
     font-size:20px;
-   max-width:500px;
+   max-width:calc(60% - 30px);
 }
 .bottom-btn{
     display:flex;
@@ -599,7 +603,7 @@ font-weight: 400;
 
 .video-outercontainerbottom{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
 
 }
@@ -693,7 +697,7 @@ font-weight: 400;
     flex-direction: column;
     justify-content: flex-start;
     gap:24px;
-   
+    flex-wrap: wrap;
     width:calc(33.33% - 20px);
 
    
@@ -832,16 +836,11 @@ background-blend-mode: normal, hue, normal;
     font-weight: 400;
    
 }
-.footer-phonelinks {
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    
-    
-}
+
 .footer-phonelinks ul{
     list-style: none;
-    
+    display:flex;
+    flex-direction: column;
 }
 .footer-phonelinks a{
     color:#F2F4F7;
@@ -976,6 +975,9 @@ background-blend-mode: normal, hue, normal;
     font-size: 14px;
 }
 .product-inner-card,.blogs-bottom-card{
+    flex-basis: 90%;
+}
+.feedback-left{
     flex-basis: 90%;
 }
 }
